@@ -23,16 +23,16 @@
     <nav>
       <ul>
         <li class="active"><a href="#home"><span>Build Your Sniffer</span></a></li>
-        <li><a href="#section-1"><span>Section 1</span></a></li>
-        <li><a href="#section-2"><span>Section 2</span></a></li>
-        <li><a href="#section-3"><span>Section 3</span></a></li>
-        <li><a href="#section-4"><span>Section 4</span></a></li>
-        <li><a href="#section-5"><span>Section 5</span></a></li>
-        <li><a href="#section-6"><span>Section 6</span></a></li>
-        <li><a href="#section-7"><span>Section 7</span></a></li>
-        <li><a href="#section-8"><span>Section 8</span></a></li>
-        <li><a href="#section-9"><span>Section 9</span></a></li>
-        <li><a href="#section-10"><span>Section 10</span></a></li>
+        <li><a href="#section-1"><span>Step 1</span></a></li>
+        <li><a href="#section-2"><span>Step 2</span></a></li>
+        <li><a href="#section-3"><span>Step 3</span></a></li>
+        <li><a href="#section-4"><span>Step 4</span></a></li>
+        <li><a href="#section-5"><span>Step 5</span></a></li>
+        <li><a href="#section-6"><span>Step 6</span></a></li>
+        <li><a href="#section-7"><span>Step 7</span></a></li>
+        <li><a href="#section-8"><span>Step 8</span></a></li>
+        <li><a href="#section-9"><span>Step 9</span></a></li>
+        <li><a href="#section-10"><span>Step 10</span></a></li>
       </ul>
     </nav>
   </header>
@@ -47,7 +47,6 @@
     <section id="section-1">
       <div class="inner">
         <h2>Gather Material</h2>
-        
           <h3>To build 1 device you will need:</h3>
           1. An ATmega328 with Arduino bootloader
           <img src="ProductImage/1_1.jpg"/>
@@ -100,22 +99,56 @@
 
     <section id="section-2">
       <div class="inner">
-        <h2>Section 2</h2>
+        <h2>Build Sniffer Box</h2>
+        Breadboard (and connections):
+        <img src="ProductImage/2_1.jpg"/>
+        ATmega328 pinout diagram is shown in the figure below:
+        <img src="ProductImage/2_2.jpg"/>
+        ATmega 328 pin mapping table:
+        <img src="ProductImage/2_3.jpg"/>
+        ATmega 328 pin mapping table:
+        <img src="ProductImage/2_4.jpg"/>
       </div>
     </section>
     <section id="section-3">
       <div class="inner">
-        <h2>Section 3</h2>
+        <h2>Install IDE</h2>
+        We recommend use Arduino IDE with ESP8266 plugin since we can re-use many sensor libraries from Arduino. You can follow the instruction from the link below to prepare IDE 
+        <br><a href="http://esp8266.github.io/Arduino/versions/2.3.0/doc/installing.html">http://esp8266.github.io/Arduino/versions/2.3.0/doc/installing.html </a>
+        <br><br><b>Needed libraries:</b>
+        <ul style="text-align: left;">
+          <li>1. Library for temperature and humidity sensor DHT11 or DHT22</li>
+          <li>2. Library for the LiquidCrystal LCD display connected to an Arduino board</li>
+          <li>3. Json Library for Arduino</li>
+          <li>4. Low power functions library JeeLib (to reduce power consumption)</li>
+          <li>5. Nova sensor library to measure dust data (PM2.5 and PM10) in the environment</li>
+        </ul>
+        <br>You can get all the libraries here: ​
+        <a href="https://github.com/aavn/Sniffer/tree/master/libs">https://github.com/aavn/Sniffer/tree/master/libs</a>, unzip all the libraries then put them to folder \libraries of Arduino sketch directory. Restart Arduino IDE and start using all of libraries. You can find the sketch folder in ​File/Preferences. ​If the \libraries folder does not exist, you can simply create it.
+        <img src="ProductImage/3_1.jpg"/>
       </div>
     </section>
     <section id="section-4">
       <div class="inner">
-        <h2>Section 4</h2>
+        <h2>Get MAC Address</h2>
+        <h3>Normally, you can ask the seller the MAC address of the ESP8266 board. Otherwise, you can follow these steps to get the MAC address</h3>
+        
+          1. Connect the ESP8266 MCU to computer using USB<br>
+          2. Open Arduino IDE and create a new program (File->New), save it.<br>
+          3. Select menu Tools -> Board and select ‘NodeMCU 1.0 (ESP-12E Module) and port (the usb port connected to the MCU)<br>
+          
+
+        </ul>
+        <img src="ProductImage/4_1.jpg"/>
+        4. Open Serial Monitor (by click the top-right button on the IDE)<br>
+        <img src="ProductImage/4_2.jpg"/>
       </div>
     </section>
     <section id="section-5">
       <div class="inner">
-        <h2>Section 5</h2>
+        <h2>Get LCD address (optional)</h2>
+        <br>If your seller cannot tell you the address of your LCD-I2C module, you can use the sketch from the library to find the address: File/Examples/LiquidCrystal_I2C/i2c_scanner​
+        <img src="ProductImage/5_1.jpg"/>
       </div>
     </section>
     <section id="section-6">

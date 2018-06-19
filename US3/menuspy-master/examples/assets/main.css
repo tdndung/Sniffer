@@ -196,8 +196,10 @@ h1, h2 {
 
 #home {
   /* background: #F6F6F6; */
-  background: #63CCD7;
+  background: linear-gradient(-90deg, #86e6ef, #63CCD7);
+  /* background: #63CCD7; */
   color: white;
+  font-size:26px;
 }
 
 #section-1 {
