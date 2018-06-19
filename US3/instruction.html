@@ -1,162 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>INSTRUCTION</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      position: relative;
-  }
-  ul.nav-pills {
-      top: 20px;
-      position: fixed;
-  }
-  div.col-sm-9 div {
-      height: auto;
-      font-size: 20px;
-  }
-  .col-lg-6{
-      padding: 35px;
-      border-right: #e0e0e0 solid 1px;
-  }
-   
-  #section2 {color:black; background-color: #F5F5F5; border-radius: 10px;}
-  #section4 {color:black; background-color: #ededed;}
-  #section6 {color:black; background-color: #ededed;}
-  #section8 {color:black; background-color: #ededed;}
-  #section10 {color:black; background-color: #ededed;}
-  .col-sm-9 h1{
-      padding: 20px 0px 5px 20px;
-  }
-  @media screen and (max-width: 810px) {
-    #section1, #section2, #section3, #section41, #section42  {
-        
-    }
-  }
-  img{
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    padding: 5px;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
- 
-  </style>
+  <meta charset="UTF-8">
+  <title>MenuSpy</title>
+  <link rel="stylesheet" href="menuspy-master/examples/assets/main.css">
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-
-<div class="container">
-
-  <div class="row">
-
-    <nav class="col-sm-3" id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-        <li><a href="#section4">Section 4</a></li>
-        <li><a href="#section5">Section 5</a></li>
-        <li><a href="#section6">Section 6</a></li>
-        <li><a href="#section7">Section 7</a></li>
-        <li><a href="#section8">Section 8</a></li>
-        <li><a href="#section9">Section 9</a></li>
-        <li><a href="#section10">Section 10</a></li>
-
+<body>
+<style>
+  img{
+    border-radius: 18px;
+    border: 1px solid rgb(182, 182, 182);
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:10px 0px 50px 0px;
+  }
+  .description{
+    font-size: 16px;
+    font-style:italic;
+  }
+</style>
+  <header id="main-header" class="side-menu">
+    <nav>
+      <ul>
+        <li class="active"><a href="#home"><span>Build Your Sniffer</span></a></li>
+        <li><a href="#section-1"><span>Section 1</span></a></li>
+        <li><a href="#section-2"><span>Section 2</span></a></li>
+        <li><a href="#section-3"><span>Section 3</span></a></li>
+        <li><a href="#section-4"><span>Section 4</span></a></li>
+        <li><a href="#section-5"><span>Section 5</span></a></li>
+        <li><a href="#section-6"><span>Section 6</span></a></li>
+        <li><a href="#section-7"><span>Section 7</span></a></li>
+        <li><a href="#section-8"><span>Section 8</span></a></li>
+        <li><a href="#section-9"><span>Section 9</span></a></li>
+        <li><a href="#section-10"><span>Section 10</span></a></li>
       </ul>
     </nav>
+  </header>
 
-
-
-    <div class="col-sm-9 ">
-
-      <div id="section1" >    
-        <h1>Section 1</h1>
-        <p>
-            <div class="row">
-                <div class="col-lg-6">
-                    1. An ATmega328 with Arduino bootloader
-                    <img src="ProductImage/1_1.jpg"/>
-                </div>
-                <div class="col-lg-6">
-                    2. An ESP8266 NodeMCU Lua D1 Mini. Notes: 
-                    - Ask the seller for the MAC address or read the instruction below to get MAC address 
-                    - Ask the seller to solder the device as the image
-                    <img src="ProductImage/1_2.jpg"/>
-                </div>
-                <div class="col-lg-6">
-                        3. An ATmega328 with Arduino bootloader
-                        <img src="ProductImage/1_1.jpg"/>
-                    </div>
-                    <div class="col-lg-6">
-                        4. An ESP8266 NodeMCU Lua D1 Mini. Notes: 
-                        - Ask the seller for the MAC address or read the instruction below to get MAC address 
-                        - Ask the seller to solder the device as the image
-                        <img src="ProductImage/1_2.jpg"/>
-                </div>
-            </div>
-        </p>
+  <main>
+    <section id="home">
+      <div class="inner">
+        <h1>Build Your Sniffer</h1>
       </div>
+    </section>
 
+    <section id="section-1">
+      <div class="inner">
+        <h2>Gather Material</h2>
+        
+          <h3>To build 1 device you will need:</h3>
+          1. An ATmega328 with Arduino bootloader
+          <img src="ProductImage/1_1.jpg"/>
+          2. An ESP8266 NodeMCU Lua D1 Mini. Notes: <br>
+          <p class="description">
+          - Ask the seller for the MAC address or read the instruction below to get MAC address <br>
+          - Ask the seller to solder the device as the image<br>
+          </p>
+          <img src="ProductImage/1_2.jpg"/>
+          3. An ESP8266 cable (In order to upload source code to ESP8266)
+          <img src="ProductImage/1_3.jpg"/>
+          4. A LCD1602 (green or blue)
 
-
-      <div id="section2"> 
-        <h1>Section 2</h1>
-        <p>
-            <div class="row" >
-                <div class="col-lg-6">
-                    1. An ATmega328 with Arduino bootloader
-                    <img src="1_1.jpg"/>
-                </div>
-                <div class="col-lg-6">
-                    2. An ESP8266 NodeMCU Lua D1 Mini. Notes: 
-                    - Ask the seller for the MAC address or read the instruction below to get MAC address 
-                    - Ask the seller to solder the device as the image
-                    <img src="1_2.jpg"/>
-                </div>
-            </div>
-        </p>
+          5. A LCD I2C module. Notes: 
+          <p class="description">
+          - Ask the seller what the address of I2C is (0x27 or 0x3F) 
+          - Ask the seller to solder the LCD and I2C module together
+          </p>
+          <img src="ProductImage/1_5.jpg"/>
+          6. A Temperature and Humidity module (DHT11) (3 legs)
+          <img src="ProductImage/1_6.jpg"/>
+          7. A Nova fitness SDS011 (PM sensor). Contact IoT club by email: aavn-iot-lab@axonactive.com to get this device
+          <img src="ProductImage/1_7.jpg"/>
+          8. 30 Male - Male jumper wire
+          <img src="ProductImage/1_8.jpg"/>
+          9. 15 Female - Male jumper wire
+          <img src="ProductImage/1_9.jpg"/>
+          10. A Push-Button
+          <img src="ProductImage/1_10.jpg"/>
+          11. A Breadboard Mini 85 x 55 x 10 mm
+          <img src="ProductImage/1_11.jpg"/>
+          12. An Adapter 5V - 1Amp (Connect with ESP8266 cable to provide electric power)
+          <img src="ProductImage/1_12.jpg"/>
+          13. A Dual led (common cathode - )
+          <img src="ProductImage/1_13.jpg"/>
+          14. A Plastic box to make the case (160 x 85 x 55 mm)
+          <img src="ProductImage/1_14.jpg"/>
+          15. 3 Resistor - 220 Ohm
+          <img src="ProductImage/1_15.jpg"/>
+          16. A Crystal - 16 MHz
+          <img src="ProductImage/1_16.jpg"/>
+          17. 2 Ceramic capacitor - 22 pF
+          <img src="ProductImage/1_17.jpg"/>
+          18. An Electrolytic capacitor - 10 uF (Long leg is the positive (+) lead, the shorter one is negative (-) lead)
+          <img src="ProductImage/1_18.jpg"/>
+          19. An USB UART CP2102 (To upload source code for Atmega328. It is not included in final product.)
+          <img src="ProductImage/1_19.jpg"/>
       </div>
-      
-      
-      <div id="section3">         
-        <h1>Section 3</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!
+    </section>
 
-            Try to scroll this section and look at the navigation list while scrolling!<br>
-            Try to scroll this section and look at the navigation list while scrolling!<br>
-            Try to scroll this section and look at the navigation list while scrolling!<br>
-            Try to scroll this section and look at the navigation list while scrolling!<br>
-            Try to scroll this section and look at the navigation list while scrolling!<br>
-            Try to scroll this section and look at the navigation list while scrolling!<br>
-            Try to scroll this section and look at the navigation list while scrolling!<br>
-            Try to scroll this section and look at the navigation list while scrolling!<br>
-        </p>
+    <section id="section-2">
+      <div class="inner">
+        <h2>Section 2</h2>
       </div>
-
-
-
-      <div id="section4">         
-        <h1>Section 4-1</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>      
-
-
-
-      <div id="section5">         
-        <h1>Section 4-2</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+    </section>
+    <section id="section-3">
+      <div class="inner">
+        <h2>Section 3</h2>
       </div>
+    </section>
+    <section id="section-4">
+      <div class="inner">
+        <h2>Section 4</h2>
+      </div>
+    </section>
+    <section id="section-5">
+      <div class="inner">
+        <h2>Section 5</h2>
+      </div>
+    </section>
+    <section id="section-6">
+      <div class="inner">
+        <h2>Section 6</h2>
+      </div>
+    </section>
+    <section id="section-7">
+      <div class="inner">
+        <h2>Section 7</h2>
+      </div>
+    </section>
+    <section id="section-8">
+      <div class="inner">
+        <h2>Section 8</h2>
+      </div>
+    </section>
+    <section id="section-9">
+      <div class="inner">
+        <h2>Section 9</h2>
+      </div>
+    </section>
+    <section id="section-10">
+      <div class="inner">
+        <h2>Section 10</h2>
+      </div>
+    </section>
+    
+  </main>
 
+  <!-- <ul id="demos-nav">
+    <li><a href="fixed-header.html">Fixed header</a></li>
+    <li class="active"><a href="sidemenu.html">Sidebar menu</a></li>
+    <li><a href="lavalamp.html">Lavalamp menu</a></li>
+  </ul> -->
 
-
-    </div>
-  </div>
-</div>
-
+  <script src="menuspy-master/dist/menuspy.js"></script>
+  <script>
+    var elm = document.querySelector('#main-header');
+    var ms = new MenuSpy(elm);
+  </script>
 </body>
 </html>
